@@ -79,8 +79,10 @@ LiDAR, Camera, GPS 및 IMU 등의 센서 데이터를 기반으로 차량의 위
 
 ## 4. License
 
-본 저장소의 라이선스는 루트 디렉터리의 [LICENSE](LICENSE) 파일을 참고하시기 바랍니다.
+This repository is licensed under the [MIT License](LICENSE).
 
-본 저장소에서 연결하는 각 하위 프로젝트는 독립적인 GitHub 저장소로 관리되며, 해당 프로젝트의 라이선스 및 사용 조건을 따릅니다.
+This license applies only to original materials contained in this repository.
 
-대회 규정 및 운영 관련 공식 문서의 저작권은 각 원저작권자에게 있으며, 본 프로젝트의 소프트웨어 라이선스 적용 대상에 포함되지 않습니다.
+Each linked project repository maintains its own license and copyright.
+
+Competition regulations, official documents, and third-party materials are not covered by this license.
