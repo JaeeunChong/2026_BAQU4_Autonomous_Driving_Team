@@ -1,2 +1,86 @@
-# 2026_BAQU4_Autonomous_Driving_Team
-2026 BAQU4 자율주행팀
+# 2026 BAQU4 Autonomous Driving Team
+
+> **Date:** 2026-10-30  
+> **Competition:** 2026 대학생 AI·SW 모빌리티 경진대회 — 자작자율차 부문  
+> **Award:** 특별상 (자작자율차 설계 부문)
+
+[![BAQU4 Competition Video](https://img.youtube.com/vi/D8cXiHYWWPs/hqdefault.jpg)](https://www.youtube.com/watch?v=D8cXiHYWWPs&t=930s)
+
+---
+
+## 1. System Overview
+
+BAQU4는 **하드웨어팀, 제어팀, 인지판단팀**으로 구성된 자작 자율주행 차량 개발팀입니다.
+
+| Team | Responsibilities |
+|---|---|
+| **Hardware** | 차량 섀시 및 기구부 설계·제작, 하드웨어 시스템 구성 |
+| **Vehicle Control** | 구동 모터, 조향 모터, 브레이크 및 ASMS 개발 |
+| **Perception & Planning** | 센서 기반 환경 인식, 위치 추정, 주행 판단 및 상위제어 알고리즘 개발 |
+
+각 시스템은 독립적으로 개발 및 검증되었으며, 최종적으로 차량 단위의 통합 자율주행 시스템으로 구성되었습니다.
+
+**본 저장소는 제어팀과 인지판단팀의 소프트웨어 프로젝트 및 관련 개발 자료를 관리합니다.**
+
+---
+
+## 2. Project Repositories
+
+### 2.1 Vehicle Control — 제어팀
+
+차량의 종방향·횡방향 제어, 제동 시스템, 주행 모드 전환 및 안전 기능을 담당합니다.
+
+| Module | Description | Repository |
+|---|---|---|
+| Motor Control | 종방향 구동 모터 제어 | [BAKU-Motor-Control](https://github.com/sjh0130s/BAKU-Motor-Control) |
+| Steering Control | 횡방향 조향 모터 제어 | [f429zi_baqu](https://github.com/planta223/f429zi_baqu) |
+| Brake Control | 제동 액추에이터 제어 | [bakunet](https://github.com/jeyun6267/bakunet) |
+| ASMS | 주행 모드 전환 및 안전 관리 | [ASMS_Firmware](https://github.com/taeeunindaeyo/ASMS_Firmware) |
+
+### 2.2 Perception & Planning — 인지판단팀
+
+LiDAR, Camera, GPS 및 IMU 등의 센서 데이터를 기반으로 차량의 위치와 주변 환경을 인식하고, 주행 경로 및 차량 제어 명령을 생성합니다.
+
+| Module | Description | Repository |
+|---|---|---|
+| GPS Localization | GPS 기반 차량 위치 및 방향 추정 | 추후 추가 |
+| Traffic Light Recognition | 교통 신호 인식 및 현시 정보 처리 | 추후 추가 |
+| Map Generation | 주행 지도 및 기준 경로 생성 | 추후 추가 |
+| Cone Detection | 콘 검출 및 장애물 인식 | 추후 추가 |
+| Control Manager | 주행 판단 및 경로 추종 제어 | [control_manager](https://github.com/planta223/control_manager) |
+
+---
+
+## 3. Documentation & Resources
+
+### 3.1 Competition Documents
+
+대회 규정, 경기 진행 시나리오, 신호 현시 정보 및 K-City 지도 등 대회 운영과 관련된 공식 자료는 비공개로 관리합니다.
+
+### 3.2 Driving Data
+
+제동검차, 예선 및 본선 과정에서 수집한 주행 데이터와 관련 자료를 정리합니다.
+
+| Session | Description | Data |
+|---|---|---|
+| **Brake Inspection** | 제동검차 | 추후 추가 |
+| **Preliminary Round** | 예선 주행 | 추후 추가 |
+| **Final Round** | 본선 주행 | 추후 추가 |
+
+**Additional Resources**
+
+| Resource | Description | Link |
+|---|---|---|
+| ROS Bag / Driving Videos | 주행 기록 및 영상 데이터 | Google Drive 링크 추가 |
+| Map Data | 주행 지도 및 경로 데이터 | 링크 추가 |
+| Model Files | 인지 모델 및 관련 파일 | 링크 추가 |
+
+---
+
+## 4. License
+
+본 저장소의 라이선스는 루트 디렉터리의 [LICENSE](LICENSE) 파일을 참고하시기 바랍니다.
+
+본 저장소에서 연결하는 각 하위 프로젝트는 독립적인 GitHub 저장소로 관리되며, 해당 프로젝트의 라이선스 및 사용 조건을 따릅니다.
+
+대회 규정 및 운영 관련 공식 문서의 저작권은 각 원저작권자에게 있으며, 본 프로젝트의 소프트웨어 라이선스 적용 대상에 포함되지 않습니다.
