@@ -59,21 +59,19 @@ LiDAR, Camera, GPS 및 IMU 등의 센서 데이터를 기반으로 차량의 위
 
 ### 3.2 Driving Data
 
-제동검차, 예선 및 본선 과정에서 수집한 주행 데이터와 관련 자료를 정리합니다.
+제동검차, 예선 및 본선 과정에서 수집한 주행 로그와 지도 데이터를 정리합니다.
 
-| Session | Description | Data |
-|---|---|---|
-| **Brake Inspection** | 제동검차 | 추후 추가 |
-| **Preliminary Round** | 예선 주행 | 추후 추가 |
-| **Final Round** | 본선 주행 | 추후 추가 |
+**[Google Drive — BAQU4 Driving Data](https://drive.google.com/drive/folders/11jBqeTpvgn3spmiP_2gE9azIPyaHj95M?usp=sharing)**
 
-**Additional Resources**
+| File / Directory | Description |
+|---|---|
+| `brake_log/` | 제동검차 주행 로그 |
+| `preliminary_1030/` | 예선 주행 로그 (2026-10-30) |
+| `final_1031/` | 본선 주행 로그 (2026-10-31) |
+| `MAP_preliminary_v3.json` | 예선 주행 지도 데이터 |
+| `MAP_final_v4.json` | 본선 주행 지도 데이터 |
 
-| Resource | Description | Link |
-|---|---|---|
-| ROS Bag / Driving Videos | 주행 기록 및 영상 데이터 | Google Drive 링크 추가 |
-| Map Data | 주행 지도 및 경로 데이터 | 링크 추가 |
-| Model Files | 인지 모델 및 관련 파일 | 링크 추가 |
+> All driving logs and map files are available through the Google Drive link above.
 
 ---
 
